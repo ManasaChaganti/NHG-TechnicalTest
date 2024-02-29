@@ -1,11 +1,9 @@
 ﻿using RestSharp;
-using System.Threading.Tasks;
 
 namespace TechnicalTest.Service
 {
     public class RestService
     {
-
         public RestResponse Get(string url)
         {            
             RestClient restClient = new RestClient(url);

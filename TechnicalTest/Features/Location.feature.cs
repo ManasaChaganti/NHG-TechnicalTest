@@ -75,7 +75,7 @@ namespace TechnicalTest.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Make successful location information")]
-        [NUnit.Framework.TestCaseAttribute("AD", "AD100", "true", null)]
+        [NUnit.Framework.TestCaseAttribute("AD", "AD100", "false", null)]
         [NUnit.Framework.TestCaseAttribute("AT", "96799", "false", null)]
         public void MakeSuccessfulLocationInformation(string countryCode, string postCode, string isSuccessful, string[] exampleTags)
         {
@@ -96,10 +96,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
-testRunner.Given(string.Format("I make a request to get location information {0},{1}", countryCode, postCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I make a request to get location information {0},{1}", countryCode, postCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-testRunner.Then(string.Format("I verify the request status {0}", isSuccessful), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I verify the request status {0}", isSuccessful), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
